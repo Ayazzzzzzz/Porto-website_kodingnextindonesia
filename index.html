@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+      TEACHER NOTE: 
+      We use Bootstrap CDN here for quick, responsive layouts without heavy setup. 
+      Great for teaching children how modern web design works!
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laras Ayodya Sari - Portfolio</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- ========================================== -->
+    <!-- NAVIGATION BAR -->
+    <!-- ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-code-slash text-success"></i> Simple Portofolio Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- PROFILE & ABOUT ME SECTION (Clean Layout, No Cards/Boxes) -->
+    <!-- ========================================== -->
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-4">
+                
+                <!-- LEFT COLUMN: Profile (Clean & Direct) -->
+                <div class="col-lg-4 text-center text-lg-start">
+                    <div class="text-center text-lg-start mb-3">
+                        <img src="assets/images/profile.jpg" alt="Laras Ayodya" class="rounded-circle profile-img">
+                    </div>
+                    <h3 class="fw-bold mb-1 text-dark">Laras Ayodya Sari</h3>
+                    <p class="text-success fw-semibold small mb-2">Informatics Graduate & ML Enthusiast</p>
+                    <p class="small text-secondary mb-0">
+                        "I enjoy turning curiosity into real projects, through AI research, mobile apps, and meaningful tech solutions."
+                    </p>
+                </div>
+
+                <!-- RIGHT COLUMN: Detailed About Me (No White Box) -->
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3 text-dark">About Me</h2>
+                    <p class="text-secondary fs-6 lh-lg">
+                        Hello! I'm an Informatics graduate from Universitas Pembangunan Nasional “Veteran” Yogyakarta 
+                        with a strong interest in machine learning, mobile development, and human-centered technology. 
+                        Throughout my academic journey, I have explored various technologies ranging from generative AI research 
+                        and machine learning applications to cross-platform mobile and web development.
+                    </p>
+                    <p class="text-secondary fs-6 lh-lg mb-0">
+                        Whether it is developing AI-powered solutions, building user-centered applications, or creating platforms 
+                        inspired by my personal passions, I am constantly looking for opportunities to learn, experiment, and grow. 
+                        Open to collaborative environments, I am eager to work with people who share the same curiosity for innovation.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- PROJECTS SECTION (Dynamic Rendering via JS) -->
+    <!-- ========================================== -->
+    <section id="projects" class="py-5 mt-5 bg-white border-top">
+        <div class="container py-3">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">My Featured Projects</h2>
+                <p class="text-muted">Built with passion, logic, and creativity. (Loaded dynamically using JavaScript!)</p>
+            </div>
+            
+            <!-- JavaScript will inject project cards inside this row automatically! -->
+            <div id="project-list" class="row g-4">
+                <!-- Cards injected via script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- LET'S CONNECT SECTION -->
+    <!-- ========================================== -->
+    <section id="contact" class="py-5 bg-light text-center border-top">
+        <div class="container">
+            <h3 class="fw-bold mb-2">Let's Connect!</h3>
+            <p class="text-muted mb-4">Let's learn, build, and create meaningful technology together.</p>
+            
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.linkedin.com/in/larasayo" class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 45px; height: 45px;" target="_blank"><i class="bi bi-linkedin fs-5"></i></a>
+                <a href="mailto:larasaayodyasa37@gmail.com" class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 45px; height: 45px;"><i class="bi bi-envelope-fill fs-5"></i></a>
+                <a href="https://github.com/Ayazzzzzzz" class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 45px; height: 45px;" target="_blank"><i class="bi bi-github fs-5"></i></a>
+                <a href="https://www.instagram.com/laras.ay097/" class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 45px; height: 45px;" target="_blank"><i class="bi bi-instagram fs-5"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SLIM FOOTER -->
+    <!-- ========================================== -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="small text-white-50 mb-0">&copy; 2026 Laras Ayodya Sari. Built for Koding Next Mock-Up Class.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
