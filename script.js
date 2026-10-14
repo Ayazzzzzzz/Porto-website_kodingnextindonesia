@@ -14,7 +14,7 @@ const projectsData = [
         type: "Bangkit Academy Capstone Project",
         description: "A mobile application developed during Bangkit Academy to help beginner gardeners identify plant diseases and receive practical treatment recommendations by taking a leaf photo. Achieved 93.02% accuracy using TensorFlow CNN.",
         image: "assets/images/greenguard.png",
-        link: "https://github.com/Ayazzzzzzz"
+        link: "https://github.com/GreenGuardTeam/Capstone_GreenGuard/tree/main/Machine%20Learning%20Path"
     },
     {
         title: "Face Inpainting (Thesis)",
@@ -32,7 +32,7 @@ const projectsData = [
         type: "Group Project (Web & Mobile)",
         description: "A cross-platform movie ticket booking application where users can browse movies, select schedules, choose seats, and manage bookings across web (React) and mobile (Flutter) connected to a Node.js backend.",
         image: "assets/images/luminacine.png",
-        link: "https://github.com/Ayazzzzzzz"
+        link: "https://github.com/Ayazzzzzzz/luminacine_frontend"
     },
     {
         title: "AOT Fanbase Hub",
@@ -41,7 +41,7 @@ const projectsData = [
         type: "Solo Project (Mobile)",
         description: "A feature-rich Flutter mobile application designed as a centralized platform for fans to explore character info, merchandise, events, Google Maps integration, and an accelerometer-based 'Titan Detect' feature.",
         image: "assets/images/aot_fanbase.png",
-        link: "https://github.com/Ayazzzzzzz"
+        link: "http://github.com/Ayazzzzzzz/Final-Project_TPM_Ayas"
     },
     {
         title: "Radja Wedang",
@@ -50,7 +50,7 @@ const projectsData = [
         type: "Group Project (B2B2C E-commerce)",
         description: "A B2B2C e-commerce platform for a local souvenir shop in Yogyakarta connecting shop admins, tour guides with referral codes, and customers, built using HTML, CSS, and PHP.",
         image: "assets/images/radja_wedang.png",
-        link: "https://github.com/Ayazzzzzzz"
+        link: "https://github.com/salmahnf/Web-Radja-Wejang-Jogjakarta"
     },
     {
         title: "Suaka Burung Nusantara",
@@ -59,7 +59,7 @@ const projectsData = [
         type: "Solo Project (Certification)",
         description: "A personal web platform concept inspired by a passion for bird conservation in Indonesia, featuring local bird species education, donation programs, and a photo-sharing community gallery.",
         image: "assets/images/suaka_burung.png",
-        link: "https://github.com/Ayazzzzzzz"
+        link: "https://github.com/Ayazzzzzzz/Suaka-Burung-Nusantara-Sertifikasi-JWD-"
     }
 ];
 

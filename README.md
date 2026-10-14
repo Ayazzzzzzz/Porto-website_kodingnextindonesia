@@ -24,11 +24,11 @@ portfolio-website/
 └── assets/
     └── images/         # Profile photo and project thumbnail assets
         ├── profile.jpg
-        ├── greenguard.jpg
-        ├── face_inpainting.jpg
-        ├── luminacine.jpg
-        ├── aot_fanbase.jpg
-        └── radja_wedang.jpg
+        ├── greenguard.png
+        ├── face_inpainting.png
+        ├── luminacine.png
+        ├── aot_fanbase.png
+        └── radja_wedang.png
 ```
 
 ---

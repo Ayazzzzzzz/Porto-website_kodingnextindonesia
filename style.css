@@ -1,17 +1,26 @@
-/* ========================================== */
-/* CUSTOM PORTFOLIO STYLES                    */
-/* ========================================== */
+/* ==============================================================================
+   CUSTOM PORTFOLIO STYLES
+   Lesson Concept: Overriding Framework Defaults & CSS Box Model Tricks
+   ============================================================================== */
 
-/* Profile image proper styling (No more awkward cropping) */
+/* 
+   Profile Image Customization
+   - `object-fit: cover` prevents image stretching/distortion when forced into a fixed dimension.
+   - Fixed width/height (180px) creates a perfect square, which turns into a circle via Bootstrap's `rounded-circle`.
+*/
 .profile-img {
-    width: 240px;
-    height: 240px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border: 4px solid #f8f9fa;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Project card hover animation effect for interactivity */
+/* 
+   Interactive Card Hover Animation (UI/UX Micro-interaction)
+   - `transition` enables smooth 0.3s physical elevation when hovering over project cards.
+   - `translateY(-5px)` lifts the card upward on mouse hover to provide visual feedback to users.
+*/
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -21,7 +30,10 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
 }
 
-/* Badge styling */
+/* 
+   Typography Fine-tuning for Tech Stack Badges
+   - Adjusts font-weight and sizing inside project cards for optimal visual balance.
+*/
 .badge {
     font-weight: 600;
     font-size: 0.75rem;

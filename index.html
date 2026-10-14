@@ -19,15 +19,24 @@
 </head>
 <body class="bg-light">
 
-    <!-- ========================================== -->
-    <!-- NAVIGATION BAR -->
-    <!-- ========================================== -->
+    <!-- 
+      ==========================================================================
+      NAVIGATION BAR
+      Concept: 'sticky-top' keeps navigation visible while scrolling.
+      Bootstrap's responsive navbar collapses into a hamburger menu on smaller screens.
+      ==========================================================================
+    -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-code-slash text-success"></i> Simple Portofolio Web</a>
+            <!-- Brand logo & name -->
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-code-slash text-success"></i> Laras Ayodya
+            </a>
+            <!-- Mobile Toggle Button (Hamburger menu for small screens) -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Navigation Links -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
@@ -38,16 +47,23 @@
         </div>
     </nav>
 
-    <!-- ========================================== -->
-    <!-- PROFILE & ABOUT ME SECTION (Clean Layout, No Cards/Boxes) -->
-    <!-- ========================================== -->
+    <!-- 
+      ==========================================================================
+      PROFILE & ABOUT ME SECTION (Clean 2-Column Layout)
+      Teaching Insight: Demonstrates the Bootstrap Grid System (`row` & `col-lg-*`).
+      - Left Column (col-lg-4): Profile photo & quick bio summary.
+      - Right Column (col-lg-8): Detailed About Me paragraph narrative.
+      We avoid heavy boxed cards here for a sleek, modern aesthetic.
+      ==========================================================================
+    -->
     <section id="about" class="py-5">
         <div class="container py-4">
             <div class="row align-items-center g-4">
                 
-                <!-- LEFT COLUMN: Profile (Clean & Direct) -->
+                <!-- LEFT COLUMN: Profile Info (4/12 grid width on large screens) -->
                 <div class="col-lg-4 text-center text-lg-start">
                     <div class="text-center text-lg-start mb-3">
+                        <!-- Profile Image: Clean rounded styling handled in style.css -->
                         <img src="assets/images/profile.jpg" alt="Laras Ayodya" class="rounded-circle profile-img">
                     </div>
                     <h3 class="fw-bold mb-1 text-dark">Laras Ayodya Sari</h3>
@@ -57,7 +73,7 @@
                     </p>
                 </div>
 
-                <!-- RIGHT COLUMN: Detailed About Me (No White Box) -->
+                <!-- RIGHT COLUMN: Detailed Narrative (8/12 grid width on large screens) -->
                 <div class="col-lg-8">
                     <h2 class="fw-bold mb-3 text-dark">About Me</h2>
                     <p class="text-secondary fs-6 lh-lg">
@@ -77,9 +93,15 @@
         </div>
     </section>
 
-    <!-- ========================================== -->
-    <!-- PROJECTS SECTION (Dynamic Rendering via JS) -->
-    <!-- ========================================== -->
+    <!-- 
+      ==========================================================================
+      FEATURED PROJECTS SECTION
+      Teaching Concept: Hybrid Delivery (DOM Container for JavaScript)
+      Instead of hardcoding 6 identical HTML cards, we leave `<div id="project-list">` empty.
+      JavaScript (`script.js`) will iterate through an Array of Objects and automatically 
+      generate and inject project cards here.
+      ==========================================================================
+    -->
     <section id="projects" class="py-5 mt-5 bg-white border-top">
         <div class="container py-3">
             <div class="text-center mb-5">
@@ -87,16 +109,19 @@
                 <p class="text-muted">Built with passion, logic, and creativity. (Loaded dynamically using JavaScript!)</p>
             </div>
             
-            <!-- JavaScript will inject project cards inside this row automatically! -->
+            <!-- Target DOM container where script.js injects dynamic cards -->
             <div id="project-list" class="row g-4">
-                <!-- Cards injected via script.js -->
+                <!-- Dynamic cards injected here via script.js -->
             </div>
         </div>
     </section>
 
-    <!-- ========================================== -->
-    <!-- LET'S CONNECT SECTION -->
-    <!-- ========================================== -->
+    <!-- 
+      ==========================================================================
+      LET'S CONNECT / SOCIAL CONTACT SECTION
+      Provides quick round icon buttons for external links (LinkedIn, Email, GitHub, IG).
+      ==========================================================================
+    -->
     <section id="contact" class="py-5 bg-light text-center border-top">
         <div class="container">
             <h3 class="fw-bold mb-2">Let's Connect!</h3>
@@ -111,18 +136,21 @@
         </div>
     </section>
 
-    <!-- ========================================== -->
-    <!-- SLIM FOOTER -->
-    <!-- ========================================== -->
+    <!-- 
+      ==========================================================================
+      SLIM FOOTER
+      Kept concise and separate from the contact section for a clean design hierarchy.
+      ==========================================================================
+    -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <p class="small text-white-50 mb-0">&copy; 2026 Laras Ayodya Sari. Built for Koding Next Mock-Up Class.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle CDN -->
+    <!-- Bootstrap JavaScript Bundle (Includes Popper for dropdowns & interactive toggles) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JavaScript -->
+    <!-- Custom Logic Script -->
     <script src="script.js"></script>
 </body>
 </html>
